@@ -1,11 +1,11 @@
 import React from 'react';
 import { FaGithub, FaDiscord, FaTwitter, FaReddit } from "react-icons/fa";
-import Statistics from './components/Statistics'
-import Aboutus from './components/About'
-import Chooseus from './components/Choose'
-import Updates from './components/Updates'
-import Footer from "./components/Footer"
+import Statistics from './components/Statistics';
+import Aboutus from './components/About';
 import Button from './components/Button';
+import Chooseus from './components/Choose';
+import Updates from './components/Updates';
+import Footer from './components/Footer';
 import Link from "next/link";
 
 const Home = () => {
