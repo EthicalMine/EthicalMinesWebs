@@ -1,7 +1,7 @@
 import React from 'react'
-import { IoLogoTwitter } from "react-icons/io5";
+import { IoLogoTwitter } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
-import { CiInstagram, CiLinkedin } from "react-icons/ci";
+import { CiLinkedin, CiInstagram } from "react-icons/ci";
 
 const Footer = () => {
   return (
