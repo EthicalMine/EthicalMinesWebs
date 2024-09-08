@@ -1,11 +1,23 @@
-import React from 'react'
+import React from 'react';
 
-const Button = ({children}: any) => {
-  return (
-    <div>
-        <button className='py-3 px-10 my-5 mx-1 bg-gradient-tob rounded-md'>{children}</button>
-    </div>
-  )
+interface ButtonProps {
+  children: React.ReactNode;
+  onClick?: () => void;
+  type?: "button" | "submit" | "reset";
+  ariaLabel?: string;
 }
 
-export default Button
+const Button: React.FC<ButtonProps> = ({ children, onClick, type = "button", ariaLabel }) => {
+  return (
+    <button
+      className='py-3 px-10 my-5 mx-1 bg-gradient-tob rounded-md text-white font-semibold'
+      onClick={onClick}
+      type={type}
+      aria-label={ariaLabel}
+    >
+      {children}
+    </button>
+  );
+};
+
+export default Button;
